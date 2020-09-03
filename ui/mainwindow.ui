@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>694</width>
+    <height>590</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>图层选择</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>694</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_2"/>
+    <addaction name="separator"/>
+    <addaction name="readfile"/>
+    <addaction name="get_shikuang_trigger"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>投影设置</string>
+    </property>
+    <addaction name="lonlatshadowtrigger"/>
+    <addaction name="lbtshadowtrigger"/>
+    <addaction name="mktshadowtrigger"/>
+    <addaction name="separator"/>
+    <addaction name="ifshowlonlat"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>测试</string>
+    </property>
+    <addaction name="testbutton"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_2">
+   <property name="text">
+    <string>清除</string>
+   </property>
+  </action>
+  <action name="lonlatshadowtrigger">
+   <property name="text">
+    <string>等经纬度投影</string>
+   </property>
+  </action>
+  <action name="lbtshadowtrigger">
+   <property name="text">
+    <string>兰勃特投影</string>
+   </property>
+  </action>
+  <action name="mktshadowtrigger">
+   <property name="text">
+    <string>麦卡托投影</string>
+   </property>
+  </action>
+  <action name="ifshowlonlat">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>经纬线显示</string>
+   </property>
+  </action>
+  <action name="testbutton">
+   <property name="text">
+    <string>testbutton</string>
+   </property>
+  </action>
+  <action name="readfile">
+   <property name="text">
+    <string>读取实况数据</string>
+   </property>
+  </action>
+  <action name="get_shikuang_trigger">
+   <property name="text">
+    <string>读取模式数据</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
